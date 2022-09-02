@@ -1,0 +1,642 @@
+/* link font start */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* link font end */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container start */
+.container{
+    max-width: 70%;
+    margin: 0px auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(214, 214, 214);
+}
+/* container end */
+
+/* hero section start */
+.containerHero{
+    background-image: url(assets/bg-texture.png);
+    background-color: rgb(30,36,58);
+    background-size: 5px;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+}
+
+    /* navbar section start */
+    nav{
+        display: flex;
+        padding: 10px;
+        color: rgb(214, 214, 214);
+        background-color: rgb(39, 46, 71);
+        justify-content: space-between;
+        align-items: center;
+        max-width: 70%;
+        margin: 0 auto;
+        border-radius: 50px;
+        box-shadow: 2px 6px 20px 1px rgba(27, 27, 27, .5);
+        position: relative;
+        top: -100vh;
+        transition: .4s ease;
+    }
+
+    nav .logoBranding{
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    nav .fa-bars{
+        font-size: 2rem;
+        display: none;
+    }
+
+    nav .fa-times{
+        font-size: 2rem;
+        display: none;
+    }
+
+    nav .navLink{
+        display: flex;
+        list-style: none;
+    }
+    
+    nav .navLink li a{
+        /* display: inline-block; */
+        text-decoration: none;
+        padding: 0px 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        color: rgb(148, 148, 148);
+        font-size: 14px;
+        font-weight: 500;
+        transition: .3s ease;
+    }
+    
+    nav .navLink li a.active{
+        color: rgb(214, 214, 214);
+    }
+
+    nav .navLink li a:hover{
+        color: rgb(214, 214, 214);
+    }
+    /* navbar section end */
+
+    /* layout 1 start */
+    .layoutSatu{
+        color: rgb(214, 214, 214);
+        margin-top: 10rem;
+    }
+
+    .layoutSatu .headerSatu{
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    .layoutSatu .headerSatu h1{
+        font-size: 4rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        position: relative;
+        right: -100%;
+        transition: .5s ease;
+    }
+
+    .layoutSatu .headerSatu h2{
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        bottom: -100vh;
+        transition: .5s ease;
+    }
+
+    .layoutSatu .headerSatu h3{
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        left: -100%;
+        transition: .5s ease;
+    }
+
+    .about{
+        background-color: rgb(39, 46, 71);
+        margin-top: 10rem;
+        border-radius: 10px;
+        box-shadow: 2px 6px 20px 1px rgba(27, 27, 27, .5);
+        display: flex;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-right: 4rem;
+        position: relative;
+        left: 200vh;
+        transition: .5s ease;
+    }
+
+    .about .kolomSatu{
+        width: 100%;
+        flex: 4;
+    }
+
+    .about .kolomSatu img{
+        width: 200px;
+    }
+
+    .about .kolomDua{
+        flex: 6;
+    }
+
+    .about .kolomDua .kolomDuaHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .about .kolomDua .kolomDuaHeader hr{
+        border: solid 1px rgb(168, 168, 168);
+        flex-grow: 1;
+        /* flex: 10; */
+    }
+
+    .about .kolomDua .kolomDuaHeader h1{
+        font-size: 35px;
+        font-weight: 600;
+        /* flex: 6; */
+    }
+
+    .about .kolomDua p{
+        font-size: 18px;
+        line-height: 1.6;
+        margin-top: 3rem;
+        font-weight: 400;
+    }
+
+    .about .kolomDua .socialMedia{
+        margin-top: 1.5rem;
+        font-size: 22px;
+        letter-spacing: 10px;
+        cursor: default;
+    }
+
+    .about .kolomDua .socialMedia .fa-behance{
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+    .about .kolomDua .socialMedia .fa-instagram{
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+    .about .kolomDua .socialMedia .fa-whatsapp{
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+    .about .kolomDua .socialMedia .fa-behance:hover{
+        color: #0099ff;
+    }
+
+    .about .kolomDua .socialMedia .fa-instagram:hover{
+        color: #ff44ab;
+    }
+    
+    .about .kolomDua .socialMedia .fa-whatsapp:hover{
+        color: #06c000;
+    }
+    /* layout 1 end */
+
+    /* layout 2 start */
+    .layoutDua{
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 5rem;
+        position: relative;
+        left: -200%;
+        transition: .5s ease;
+    }
+
+    .headerDua h1{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .skills{
+        margin-top: 3rem;
+        display: flex;
+    }
+
+    .skills .kolomSatu{
+        flex: 1.5;
+    }
+
+    .skills .kolomSatu h4{
+        margin-bottom: .5rem;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .skills .kolomSatu .progressBorder{
+        position: relative;
+        background-color: rgb(148, 148, 148);
+        height: 16px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: inset 0px 1px 1px .1px rgba(0, 0, 0, .5);
+        margin-bottom: 2rem;
+    }
+
+    .skills .kolomSatu .progressBorder .progressBar{
+        position: absolute;
+        height: 100%;
+        width: 0;
+        border-radius: 10px;
+        background-color: #0099ff;
+    }
+
+    .skills .kolomSatu .progressBorder .Satu{
+        width: 100%;
+    }
+
+    .skills .kolomSatu .progressBorder .Dua{
+        width: 95%;
+    }
+
+    .skills .kolomSatu .progressBorder .Tiga{
+        width: 85%;
+    }
+
+    .skills .kolomSatu .progressBorder .Empat{
+        width: 70%;
+    }
+
+    .skills .kolomSatu .progressBorder .Lima{
+        width: 75%;
+    }
+
+    .skills .kolomDua{
+        flex: 1;
+    }
+
+    .skills .kolomDua img{
+        width: 220px;
+    }
+
+    /* scroll margin top start */
+    #skills:target::before
+    {
+        display: block;
+        height: 180px;
+        margin-top: -180px;
+        content: '';
+    }
+    /* scroll margin top end */
+    /* layout 2 end */
+
+    /* footer start */
+
+    footer{
+        background-color: rgb(39, 46, 71);
+        margin-top: 10rem;
+        padding: 4rem;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 2px 6px 20px 1px rgba(27, 27, 27, .5);
+        position: relative;
+        right: -200%;
+        transition: .5s ease;
+    }
+
+    footer .rowSatu{
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+    footer .kolomSatu{
+        order: 1;
+    }
+    
+    footer .kolomDua{
+        order: 2;
+    }
+
+    footer .kolomSatu .contact h1{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    footer .kolomSatu .contact p{
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    footer .kolomSatu .socialMedia h1{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    footer .socialMedia{
+        font-size: 1.5rem;
+        letter-spacing: 10px;
+        padding-top: 2rem;
+    }
+
+    footer .kolomDua h1{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+
+    footer .kolomDua .list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .kolomDua .list a{
+        text-decoration: none;
+        line-height: 1.6;
+        color: inherit;
+        font-size: 1.2rem;
+    } 
+
+    footer .rowDua{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    footer .mobile{
+        display: none;
+    }
+    /* footer end */
+
+/* hero section end */
+
+/* media queries start */
+@media (max-width: 1200px){
+    /* container start */
+    .container{
+        max-width: 100%;
+        margin: 0 16px;
+    }
+    /* container end */
+
+    /* hero section start */
+    .containerHero{
+        padding-top: 0;
+    }
+        /* navbar section start */
+        nav{
+            max-width: 100%;
+            border-radius: 0;
+            margin: 0;
+            padding: 16px;
+            box-shadow: none;
+            background: none;
+        }
+        
+        nav .navLink{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            left: 0;
+            right: 0;
+            line-height: 50px;
+            top: -1000%;
+            background-color: rgb(39, 46, 71);
+            transition: .75s ease-in-out;
+            padding-top: 3px;
+            transition: .5s ease;
+            z-index: 1;
+        }
+        nav .navLink li a{
+            transition: .3s ease-out;
+        }
+        
+        /* nav .navlink li a{
+            color: white;
+        } */
+        
+        nav .fa-bars{
+            display: block;
+        }
+
+        nav .fa-times{
+            display: block;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+        /* navbar section end */
+
+        /* layout 1 start */
+        .layoutSatu{
+            margin-top: 7rem;
+        }
+
+        .layoutSatu .header{
+            line-height: 1.5;
+        }
+
+        .layoutSatu .header h1{
+            font-size: 40px;
+        }
+        
+        .layoutSatu .header h2{
+            font-size: 25px;
+        }
+
+        .layoutSatu .header h3{
+            font-size: 20px;
+        }
+        /* layout 1 end */
+    /* hero section end */
+
+@media (max-width: 800px){
+    /* layout satu start */
+    .about{
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .about .kolomSatu img{
+        display: none;
+    }
+    /* layout satu end */
+
+    /* layout dua start */
+    .layoutDua .kolomSatu{
+        padding: 16px;
+    }
+
+    .skills .kolomDua img{
+        display: none;
+    }
+
+    .layoutDua .kolomDua{
+        flex: none;
+    }
+    /* layout dua end */
+
+    footer .rowSatu .kolomSatu .contact h1{
+        font-size: 1.5rem;
+    }
+
+    footer .rowSatu .kolomSatu .contact p{
+        font-size: 1rem;
+    }
+
+    footer .rowSatu .kolomSatu .socialMedia h1{
+        font-size: 1.5rem;
+    }
+
+    footer .rowSatu .kolomSatu .socialMedia{
+        font-size: 1.2rem;
+    }
+
+    footer .kolomDua h1{
+        font-size: 1.5rem;
+    }
+
+    footer .kolomDua .list a{
+        font-size: 1rem;
+    }
+
+    footer .rowDua{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 500px){
+    /* layout satu start */
+    .layoutSatu .headerSatu h1{
+        font-size: 2.5rem;
+    }
+
+    .layoutSatu .headerSatu h2{
+        font-size: 1.4rem;
+    }
+
+    .about .kolomDua .kolomDuaHeader h1{
+        font-size: 1.6rem;
+    }
+
+    .about .kolomDua p{
+        font-size: 16px;
+    }
+
+    .about .kolomDua .socialMedia{
+        font-size: 20px;
+    }
+    /* layout satu end */
+
+    /* layout dua start */
+    .layoutDua .headerDua h1{
+        font-size: 2rem;
+    }
+
+    .layoutDua .skills .kolomSatu h4{
+        font-size: 16px;
+    }
+    /* layout dua end */
+
+    /* footer start */
+    footer{
+        margin-top: 5rem;
+    }
+
+    footer .rowSatu{
+        display: none;
+    }
+
+    footer .rowDua{
+        display: none;
+    }
+
+    footer .mobile{
+        display: block;
+    }
+
+    footer .mobile{
+        text-align: center;
+    }
+
+    footer .mobile h4{
+        font-weight: 400;
+        line-height: 1.6;
+        color: rgb(148, 148, 148);
+    }
+
+    footer .mobile h4 span{
+        color: rgb(214, 214, 214);
+        font-weight: 500;
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+    footer .socialMedia{
+        padding-top: 0;
+        margin-bottom: 1rem;
+    }
+    /* footer end */
+}
+
+@media (max-width: 600px){
+    /* footer start */
+    footer .rowSatu .kolomSatu .contact h1{
+        font-size: 1.3rem;
+    }
+
+    footer .rowSatu .kolomSatu .contact p{
+        font-size: 1rem;
+    }
+
+    footer .rowSatu .kolomSatu .socialMedia h1{
+        font-size: 1.3rem;
+    }
+
+    footer .rowSatu .kolomSatu .socialMedia{
+        font-size: 1.1rem;
+    }
+
+    footer .rowSatu .kolomDua h1{
+        font-size: 1.3rem;
+    }
+
+    footer .rowSatu .kolomDua .list{
+        font-size: 1rem;
+    }
+
+    footer .rowDua{
+        font-size: 2.5rem;
+    }
+    /* footer end */
+}
+
+}
+/* media queries end */
