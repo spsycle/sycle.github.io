@@ -72,7 +72,7 @@ $(window).scroll(function(){
         $(footer).css({
             'right' : '0'
         });
-    } else if(wScroll < 888){
+    } else if(wScroll < 810){
         $(footer).css({
             'right' : '-200%'
         });
