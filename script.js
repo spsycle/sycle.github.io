@@ -68,11 +68,11 @@ $(window).scroll(function(){
         });
     }
 
-    if(wScroll >= 888){
+    if(wScroll >= 750){
         $(footer).css({
             'right' : '0'
         });
-    } else if(wScroll < 810){
+    } else if(wScroll < 750){
         $(footer).css({
             'right' : '-200%'
         });
